@@ -48,5 +48,21 @@
  > ![Image text](../文档/Images/16.png)
  * servlet_demo1的执行流程序
  > ![Image text](../文档/Images/14.png)
- * Servlet关系视图
+ * Servlet 关系视图
  > ![Image text](../文档/Images/15.png)
+ * Servlet 生命周期
+ > ![Image text](../文档/Images/17.png)
+ * Servlet 线程安全问题
+ > ![Image text](../文档/Images/18.png)
+ * Servlet 映射路径的三种配置方式
+ > ![Image text](../文档/Images/19.png)
+ * Servlet 创建时机
+ > ![Image text](../文档/Images/20.png)
+
+#ServletConfig
+ * ServletConfig 介绍
+ > ![Image text](../文档/Images/21.png)
+ * ServletConfig 配置方式
+ > ![Image text](../文档/Images/22.png)
+ * ServletConfig 常用方法
+ > ![Image text](../文档/Images/23.png)
