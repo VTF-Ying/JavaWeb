@@ -1,0 +1,44 @@
+#文件介绍
+![Image text](../Images/1.png)
+>- src 存放源代码的
+>- web 存放项目相关资源的(html、css、jsp、图片等)
+>- WEB_INFO 存放相关配置的(web.xml等)
+
+
+
+#打war包的流程
+![Image text](../Images/2.png)
+1. 进入项目的web文件下 运行命令
+2. jar -cvf war包名.war .
+3. 最后一个点表示当前路径   最后在web包下会有一个.war的文件
+
+#Tomcat 配置文件
+### Tomcat文件 conf 文件下有一个 server.xml 这是主配置文件 ###
+  1. 端口配置
+  > server.xml 里面有一个 Connector 标签 
+  > ![Image text](../Images/3.png)
+  > 这个标签 里的 port 是指定端口号的
+  2. 配置虚拟路径
+  > server.xml 里面有一个 Host 标签
+  > ![Image text](../Images/4.png)
+  > 在此标签内添加一行配置就可以 让 war 包解压出来的 文件不必局限于非要存在 webapp 文件下 也能被访问到
+  >![Image text](../Images/5.png)
+  3. 配置虚拟主机
+  > ![Image text](../Images/6.png)
+
+#HTTP请求
+> 1. HTTP介绍
+> ![Image text](../Images/7.png)
+> 2. GET请求方式
+> ![Image text](../Images/8.png)
+> 3. POST请求方式
+> ![Image text](../Images/9.png)
+> 4. 部分响应头的解释
+> ![Image text](../Images/10.png)
+
+#动态资源案例
+> 1. 发布静态资源步骤
+> ![Image text](../Images/11.png)
+> 2. 动态资源之Servlet介绍
+> ![Image text](../Images/12.png)
+> 3. Servlet的实现
