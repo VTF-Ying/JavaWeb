@@ -22,4 +22,28 @@
         <url-pattern>/servletConfigDemo</url-pattern>
     </servlet-mapping>
     
+    <servlet>
+        <servlet-name>servletContext</servlet-name>
+        <servlet-class>com.vtf.servlet.ServletContextDemo</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>servletContext</servlet-name>
+        <url-pattern>/servletContext</url-pattern>
+    </servlet-mapping>
+
+    <!-- 配置ServletContext -->
+    
+    <context-param>
+        <param-name>globalEncoding</param-name>
+        <param-value>UTF-8</param-value>
+    </context-param>
+
+    <context-param>
+        <param-name>globalDesc</param-name>
+        <param-value>This is ServletContext</param-value>
+    </context-param>
+
+
+    
 </web-app>

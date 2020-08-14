@@ -53,7 +53,7 @@ public class ServletConfigDemo extends HttpServlet {
 
         ServletContext servletContext = config.getServletContext();
 
-        System.out.println(servletContext);
+        System.out.println(servletContext.getSessionCookieConfig());
 
     }
 
