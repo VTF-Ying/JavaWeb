@@ -1,5 +1,6 @@
 package com.vtf.servlet;
 
+import javax.servlet.ServletContext;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -15,12 +16,15 @@ import java.io.IOException;
  */
 public class ServletContextDemo extends HttpServlet {
 
-
+    ServletContext context = getServletContext();
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        String contextPath = req.getContextPath();
+        String contextPath = context.getContextPath();
         System.out.println(contextPath);
+
+        context.getInitParameter("globalEncoding");
+
     }
 
     @Override
