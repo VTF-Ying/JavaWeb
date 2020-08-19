@@ -75,4 +75,92 @@
  * ServletContext 配置方式
  > ![Image text](../文档/Images/26.png)
  * ServletContext 常用方法
- 
+ > ![Image text](../文档/Images/27.png)
+ * 注解开发Servlet
+ > ![Image text](../文档/Images/28.png)
+ * @WebServlet 参数详解
+ > ![Image text](../文档/Images/29.png)
+
+#请求对象
+  * 请求对象介绍
+  > ![Image text](../文档/Images/30.png)
+  * 请求对象常用方法
+  > ![Image text](../文档/Images/31.png)
+  > ![Image text](../文档/Images/32.png)
+  > ![Image text](../文档/Images/33.png)
+  * 获取请求参数并封装对象 的三种方式
+  > 1. 手动封装     com.vtf.servlet.ServletDemo4
+  > 2. 反射封装     com.vtf.servlet.ServletDemo5
+  > 3. 工具类封装   com.vtf.servlet.ServletDemo6
+  * 流对象获取请求信息
+  > ![Image text](../文档/Images/34.png)
+  * 请求域
+  > ![Image text](../文档/Images/35.png)
+  * 请求转发 和 请求包含
+  > ![Image text](../文档/Images/36.png)
+  > ![Image text](../文档/Images/37.png)
+  > ![Image text](../文档/Images/38.png)
+  > ![Image text](../文档/Images/39.png)
+#响应对象
+  * 响应对象介绍
+  > ![Image text](../文档/Images/40.png)
+  * 响应状态码
+  > ![Image text](../文档/Images/41.png)
+  * 字节流响应消息
+  > ![Image text](../文档/Images/42.png)
+  * 字符流响应消息
+  > ![Image text](../文档/Images/43.png)
+  * 响应图片
+  > ![Image text](../文档/Images/44.png)
+  * 设置缓存
+  > ![Image text](../文档/Images/45.png)  
+  > setDateHeader("Expires",System.currentTimeMillis() + 60*60*1000);
+  > Expires 是控制缓存失效日期
+  * 定时刷新
+  > ![Image text](../文档/Images/46.png) 
+  > setHeader("Refresh","3;URL=/response/login.html");
+  * 请求重定向
+  > ![Image text](../文档/Images/47.png) 
+  * 文件下载
+  > ![Image text](../文档/Images/48.png)
+#Cookie
+  * 会话介绍
+  > ![Image text](../文档/Images/49.png)
+  * Cookie介绍
+  > ![Image text](../文档/Images/Cookie详解.png)
+  * Cookie属性
+  > ![Image text](../文档/Images/Cookie的属性.png)
+  * Cookie添加获取
+  > ![Image text](../文档/Images/Cookie添加获取.png)
+  * Cookie的使用
+  > ![Image text](../文档/Images/Cookie的使用.png)
+  * Cookie细节
+  > ![Image text](../文档/Images/Cookie细节.png)
+#HttpSession
+  * HttpSession介绍
+  > ![Image text](../文档/Images/HttpSession介绍.png)
+  * HttpSession常用方法
+  > ![Image text](../文档/Images/HttpSession常用方法.png)
+  * HttpSession获取
+  > ![Image text](../文档/Images/HttpSession获取一.png)
+  > ![Image text](../文档/Images/HttpSession获取二.png)
+  > ![Image text](../文档/Images/HttpSession获取三.png)
+  * HttpSession 的细节
+  > ![Image text](../文档/Images/HttpSession的细节.png)
+#JSP
+  *JSP介绍
+  > ![Image text](../文档/Images/JSP介绍.png)
+  
+
+
+
+
+
+
+
+
+
+
+
+
+

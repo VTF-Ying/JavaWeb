@@ -9,7 +9,7 @@ import java.io.IOException;
 /**
  * @ProjectName: JavaWeb
  * @ClassName: ServletDemo2
- * @Description: TODO( Servlet 快速入门2 )
+ * @Description: ( Servlet 快速入门2 )
  * @Author: VTF
  * @create: 2020-08-10 15:00
  */

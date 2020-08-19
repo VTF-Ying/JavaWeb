@@ -12,7 +12,7 @@ import java.util.Enumeration;
 /**
  * @ProjectName: JavaWeb
  * @ClassName: ServletConfigDemo
- * @Description: TODO( ServletConfig 的演示 )
+ * @Description: ( ServletConfig 的演示 )
  * @Author: VTF
  * @create: 2020-08-10 19:55
  */
@@ -52,8 +52,10 @@ public class ServletConfigDemo extends HttpServlet {
         // 获取 ServletContext 对象
 
         ServletContext servletContext = config.getServletContext();
-
         System.out.println(servletContext.getSessionCookieConfig());
+
+        /* 此值是在 com.vtf.servlet.ServletContextDemo 中设置 */
+        System.out.println(servletContext.getAttribute("username"));
 
     }
 
