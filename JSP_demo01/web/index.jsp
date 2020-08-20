@@ -1,26 +1,26 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
-  <head>
-    <title>JSP</title>
-  </head>
-  <body>
-    <h1>这是我的第一个JSP项目</h1>
-    <%--这是JSP注释 --%>
-    <%-- JSP页面输出JAVA的参数或结果时要调用 out 方法 --%>
-    <% out.print("你好<br>"); %>
+<head>
+    <title>学生管理系统</title>
+</head>
+<body>
     <%--
-        3.Jsp表达式
-        <%="表达式"%> 相当于 <% out.print("表达式"); %>
+        获取会话域中的数据
+        如果获取到了则显示添加和查看功能的超链接
+        如果没获取到则显示登录功能的超链接
     --%>
-    <%="表达式<br>"%>
-    <%--
-        4.JSP声明
-        <%!声明变量或方法%>
-        如果加 ! 代表是成员变量
-        如果不加 ! 代表声明局部变量
-        --%>
-    <%! String s = "abc<br>"; %>
-    <% String s = "def<br>"; %>
-    <%=s%>
-  </body>
+    <%
+        Object username = session.getAttribute("username");
+        if (username==null){
+    %>
+    <a href="/stu/login.jsp">请登录</a>
+    <%
+        }else{
+    %>
+    <a href="/stu/addStudent.jsp">添加学生</a>
+    <a href="/stu/listStudentServlet">查看学生</a>
+    <%
+        }
+    %>
+</body>
 </html>

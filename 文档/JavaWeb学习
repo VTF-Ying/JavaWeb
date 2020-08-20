@@ -161,13 +161,32 @@
   > ![Image text](../文档/Images/JSP隐式对象.png)
   * 四大域对象 复习
   > ![Image text](../文档/Images/四大域对象.png)
+  >- 四个域的作用域范围大小:PageContext （page域） < request < session < servletContext（application域）
   * MVC模型
   > ![Image text](../文档/Images/MVC模型.png)
-  
-
-
-
-
+#EL表达式
+  * EL表达式介绍
+  > ![Image text](../文档/Images/EL表达式.png)
+  * EL表达式范例
+  > ![Image text](../文档/Images/EL表达式范例.png)
+  * EL表达式注意事项
+  > ![Image text](../文档/Images/EL表达式注意事项.png)
+  * EL表达式运算符
+  >- 关系运算符
+  >> ![Image text](../文档/Images/EL表达式关系运算符.png)
+  >- 逻辑运算符
+  >> ![Image text](../文档/Images/EL表达式逻辑运算符.png)
+  >- 其他运算符
+  >> ![Image text](../文档/Images/EL表达式其他运算符.png)
+  * EL表达式使用细节
+  > ![Image text](../文档/Images/EL表达式的使用细节.png)
+  * EL表达式隐式对象
+  > ![Image text](../文档/Images/EL表达式隐式对象.png)
+#JSTL 介绍
+  * JSTL 介绍
+  > ![Image text](../文档/Images/JSTL介绍.png)
+  * JSTL 核心标签库
+  > ![Image text](../文档/Images/JSTL核心标签库.png)
 
 
 

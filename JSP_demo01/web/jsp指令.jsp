@@ -10,7 +10,7 @@
 </head>
 <body>
     <%--<% int t = 1/0;  %>--%>
-    <% List list = new ArrayList(); %>
+    <% List<String> list = new ArrayList<>(); %>
     <%=s%>
     <%
         out.print("aaa");
