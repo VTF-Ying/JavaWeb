@@ -12,7 +12,7 @@ import java.util.Enumeration;
 /**
  * @ProjectName: JavaWeb
  * @ClassName: LoginStudentServlet
- * @Description: TODO(学生登录功能)
+ * @Description: (学生登录功能)
  * @Author: VTF
  * @create: 2020-08-20 10:35
  */

@@ -3,7 +3,7 @@ package com.vtf.entity;
 /**
  * @ProjectName: JavaWeb
  * @ClassName: Person
- * @Description: TODO(一句话描述该类的功能)
+ * @Description: (一句话描述该类的功能)
  * @Author: VTF
  * @create: 2020-08-20 14:27
  */

@@ -187,10 +187,40 @@
   > ![Image text](../文档/Images/JSTL介绍.png)
   * JSTL 核心标签库
   > ![Image text](../文档/Images/JSTL核心标签库.png)
-
-
-
-
-
-
-
+#Filter(过滤器)
+  * 过滤器介绍
+  > ![Image text](../文档/Images/过滤器介绍.png)
+  > ![Image text](../文档/Images/Filter_API.png)
+  > ![Image text](../文档/Images/过滤器的方法.png)
+  * FilterChain 方法
+  > ![Image text](../文档/Images/FilterChain方法.png)
+  * 过滤器使用范例
+  > com.vtf.filter.FilterDemo1
+  > ![Image text](../文档/Images/过滤器使用范例.png) 
+  * 过滤器使用细节
+  > 过滤器拦截路径可以 通过使用注解(@WebFilter) 或者
+  > 通过 web.xml 配置的方法来定义
+  > ![Image text](../文档/Images/过滤器使用细节.png) 
+  > 过滤器 使用注解配置时 哪个过滤器排序靠前先执行哪个
+  > 过滤器 使用 xml 文件配置时 谁先配置 就先执行谁
+  * FilterConfig 配置对象的使用
+  > ![Image text](../文档/Images/FilterConfig配置对象的使用.png) 
+  * 过滤器的五种拦截行为
+  > ![Image text](../文档/Images/过滤器的五种拦截行为.png) 
+#监听器的介绍
+  * 监听器的介绍
+  > ![Image text](../文档/Images/监听器介绍.png) 
+  * 八个监听器的分类
+  >- 分为三类
+  >> ![Image text](../文档/Images/监听器分类.png) 
+  >- 监听对象的监听器
+  >> ![Image text](../文档/Images/监听对象的监听器1.png) 
+  >> ![Image text](../文档/Images/监听对象的监听器2.png) 
+  >> ![Image text](../文档/Images/监听对象的监听器3.png) 
+  >- 监听域对象属性变化的监听器  (页面域是没有监听器的)
+  >> ![Image text](../文档/Images/监听域对象属性变化的监听器1.png) 
+  >> ![Image text](../文档/Images/监听域对象属性变化的监听器2.png) 
+  >> ![Image text](../文档/Images/监听域对象属性变化的监听器3.png) 
+  >- 监听会话相关的感知型监听器
+  >> ![Image text](../文档/Images/监听会话相关的感知型监听器1.png) 
+  >> ![Image text](../文档/Images/监听会话相关的感知型监听器2.png) 
