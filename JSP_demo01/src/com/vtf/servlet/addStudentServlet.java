@@ -25,9 +25,6 @@ public class AddStudentServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
-        req.setCharacterEncoding("UTF-8");
-        resp.setCharacterEncoding("UTF-8");
-
         BufferedWriter bw = new BufferedWriter(new FileWriter("d:\\stu.txt",true));
 
         Map<String, String[]> map = req.getParameterMap();
@@ -37,7 +34,6 @@ public class AddStudentServlet extends HttpServlet {
         stu.setScore(Integer.valueOf(req.getParameter("score")));
         bw.write(stu.getUsername()+","+stu.getAge()+","+stu.getScore()+"\r\n");
         bw.close();
-        resp.setContentType("text/html;charset=UTF-8");
         resp.getWriter().write("添加成功,2秒后自动跳转到首页");
         resp.setHeader("Refresh","2;URL=/stu/index.jsp");
 

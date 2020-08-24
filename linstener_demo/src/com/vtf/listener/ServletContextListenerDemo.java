@@ -12,7 +12,7 @@ import javax.servlet.annotation.WebListener;
  * @Author: VTF
  * @create: 2020-08-21 17:42
  */
-@WebListener
+// @WebListener
 public class ServletContextListenerDemo implements ServletContextListener {
    
    /**
@@ -24,6 +24,15 @@ public class ServletContextListenerDemo implements ServletContextListener {
         // 获取 ServletContext 对象
         ServletContext servletContext = servletContextEvent.getServletContext();
         System.out.println(servletContext);
+
+        // 添加属性的操作
+        servletContext.setAttribute("username","张三");
+
+        // 替换属性的操作
+        servletContext.setAttribute("username","李四");
+
+        // 移除属性的操作
+        servletContext.removeAttribute("username");
     }
 
 

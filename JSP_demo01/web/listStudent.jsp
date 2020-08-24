@@ -1,5 +1,4 @@
-<%@ page import="com.vtf.entity.Student" %>
-<%@ page import="java.util.List"%>
+<%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <%@ page  contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
@@ -13,17 +12,14 @@
         <th>学生年龄</th>
         <th>学生成绩</th>
     </tr>
-    <%
-        List<Student> students = (List<Student>) session.getAttribute("students");
-        for (Student student : students) {
-            pageContext.setAttribute("student",student);
-    %>
-    <tr align="center">
-        <td>${student.username}</td>
-        <td>${student.age}</td>
-        <td>${student.score}</td>
-    </tr>
-    <%}%>
+
+    <c:forEach items="${students}" var="s">
+        <tr align="center">
+            <td>${s.username}</td>
+            <td>${s.age}</td>
+            <td>${s.score}</td>
+        </tr>
+    </c:forEach>
 </table>
 
 </body>
